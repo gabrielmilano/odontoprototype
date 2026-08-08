@@ -489,3 +489,65 @@ a { text-decoration: none; color: inherit; transition: color 0.2s; }
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ========================================
+   MOBILE COMPLETO
+   ======================================== */
+@media (max-width: 768px) {
+    .header { height: 60px; }
+    .header__inner { height: 60px; }
+    .header__logo-text { font-size: 0.95rem; }
+    .mobile-nav { top: 60px; padding: 16px; gap: 12px; }
+    .mobile-nav a { font-size: 0.95rem; }
+
+    .hero { min-height: auto; padding: 100px 0 60px; }
+    .hero__content { padding: 0; }
+    .hero__subtitle { font-size: 0.8rem; letter-spacing: 1px; }
+    .hero__title { font-size: 2rem; }
+    .hero__text { font-size: 0.95rem; }
+    .hero__actions { flex-direction: column; }
+    .hero__actions .btn-lg { width: 100%; justify-content: center; }
+
+    .section { padding: 50px 0; }
+    .section__title { font-size: 1.6rem; }
+    .section__subtitle { font-size: 0.95rem; margin-bottom: 32px; }
+
+    .sobre-grid { grid-template-columns: 1fr; gap: 30px; }
+    .sobre-image__img { aspect-ratio: 16/10; }
+    .sobre-features { grid-template-columns: 1fr; }
+
+    .services-grid { grid-template-columns: 1fr; gap: 16px; }
+    .service-card { padding: 24px 20px; }
+
+    .horarios-grid { grid-template-columns: 1fr; gap: 30px; }
+    .horarios-row { flex-direction: column; gap: 4px; text-align: center; padding: 14px 16px; }
+
+    .contact-grid { grid-template-columns: 1fr; gap: 24px; }
+    .contact-map { height: 250px; }
+    .contact-item { padding: 16px; }
+
+    .depoimentos-grid { grid-template-columns: 1fr; gap: 16px; }
+    .depoimento-card { padding: 20px 18px; }
+
+    .instagram-grid { grid-template-columns: 1fr; gap: 16px; }
+    .instagram-embed { display: none; }
+
+    .footer__inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+    .footer__contact-info { line-height: 1.8; }
+    .footer__links { text-align: center; }
+
+    .whatsapp-float { width: 52px; height: 52px; font-size: 1.5rem; bottom: 16px; right: 16px; }
+
+    .cta-card { padding: 32px 20px; }
+    .cta-card h3 { font-size: 1.2rem; }
+
+    .btn-lg { padding: 12px 20px; font-size: 0.9rem; }
+
+    .brand-footer { padding: 12px 16px; font-size: 0.75rem; }
+}
+
+@media (max-width: 380px) {
+    .hero__title { font-size: 1.7rem; }
+    .section__title { font-size: 1.4rem; }
+    .header__logo-text { font-size: 0.85rem; }
+}
