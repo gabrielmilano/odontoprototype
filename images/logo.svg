@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <rect width="200" height="50" fill="transparent"/>
+  <circle cx="25" cy="25" r="18" fill="#0f3460"/>
+  <path d="M20 18c0-2 1.5-4 4-4s4 2 4 4c0 3-4 6-4 6s-4-3-4-6z" fill="#fff"/>
+  <circle cx="22" cy="16" r="1.5" fill="#e63946"/>
+  <circle cx="28" cy="16" r="1.5" fill="#e63946"/>
+  <text x="50" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#0f3460">Dra. Jenifer</text>
+  <text x="50" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="400" fill="#666">Dreher</text>
+</svg>
