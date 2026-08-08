@@ -85,14 +85,14 @@ a { text-decoration: none; color: inherit; transition: color 0.2s; }
 .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
 
 .btn-outline {
-    background: transparent; color: #fff;
+    background: rgba(255,255,255,0.9); color: var(--primary-dark);
     padding: 10px 20px; border-radius: 8px;
     font-weight: 600; font-size: 0.9rem;
     display: inline-flex; align-items: center; gap: 8px;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid var(--primary);
     transition: all 0.2s;
 }
-.btn-outline:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+.btn-outline:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 
 .btn-header-cta {
     background: var(--accent) !important;
@@ -141,7 +141,8 @@ a { text-decoration: none; color: inherit; transition: color 0.2s; }
 
 .hero__overlay {
     position: absolute; inset: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="p" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23p)"/></svg>');
+    background: radial-gradient(circle at 80% 50%, rgba(91,192,192,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(91,192,192,0.05) 0%, transparent 40%);
 }
 
 .hero__content {
@@ -215,6 +216,8 @@ a { text-decoration: none; color: inherit; transition: color 0.2s; }
     object-fit: cover;
     border-radius: var(--radius);
     border: 2px solid var(--border);
+    opacity: 0.85;
+    filter: brightness(0.95);
 }
 
 .sobre-text p { color: var(--text-light); margin-bottom: 16px; font-size: 1.05rem; }
